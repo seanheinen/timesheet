@@ -6,17 +6,16 @@
   // the 2nd parameter is an array of 'requires'
   angular.module('timesheet', [ 
     'ui.bootstrap',     
+    'templateCache',
     'ui.router',
     'ngAnimate',
-    'templateCache',
     'timesheet.services',
     'timesheet.controllers',
-    'timesheet.controller.login'    
+    'timesheet.controller.login'        
   ])
 
   .run(function($state) {
-    // do init app thigns
-    
+    // do init app thigns    
   })
 
   /// router options below - all screens for application
@@ -32,7 +31,7 @@
           url: '/login',      
           templateUrl: 'login.html',
           controller: 'Login'
-        });   
+        });
   });
 
 })();

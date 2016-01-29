@@ -2,10 +2,10 @@
 
 <html lang="en">
   <head>
-    <meta charset="utf-8">
     <title>Timesheets</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta http-equiv="Content-Security-Policy"/>
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
@@ -15,7 +15,7 @@
 
   <body ng-app="timesheet" ng-controller="AppCtrl">
 
-    <div ng-view></div>
+    <div class="main" ui-view=""></div>
 
     <!-- library js -->
     <script src="lib/angular/js/angular.js"></script>    

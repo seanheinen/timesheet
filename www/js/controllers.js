@@ -1,6 +1,6 @@
 angular.module('timesheet.controllers', [])
 
-  .controller("AppCtrl", function($scope){
+  .controller("AppCtrl", function($scope, $state){
 
-    
+ 
   });  
