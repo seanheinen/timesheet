@@ -1,0 +1,20 @@
+<ion-view view-title="search"   cache-view="false">
+  <div class="bar bar-header bar-positive">    
+    <button class="button icon ion-chevron-left nav-buttons" ng-click="$back()"></button>
+    <h1 class="title"> {{searchTitle}} </h1>
+  </div>
+  <div class="bar bar-subheader item-input-inset bar-positive no-padding ">
+    <div class="list list-inset checkin-searchbox">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Search" ng-model="searchInput" ng-filter="">
+      </label>
+    </div>
+  </div>
+  <ion-content class="has-header has-subheader" overflow-scroll="true">    
+    <ion-list>
+      <ion-item class="item-avatar-left item-button-right" ng-repeat="item in searchScope | filter:searchInput | limitTo:20" ng-include="resultTemplate" ng-click="searchClick(item)">
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

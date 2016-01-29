@@ -1,0 +1,26 @@
+<ion-view view-title="help">
+  <div class="bar bar-header bar-positive">    
+    <button class="button icon ion-chevron-left nav-buttons" ng-click="$back()"></button>
+    <h1 class="title"> Help </h1>
+  </div>
+  <div class="bar bar-subheader item-input-inset bar-positive no-padding ">
+    <div class="list list-inset checkin-searchbox">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Search" ng-model="helpInput">
+      </label>
+    </div>
+  </div>
+  <ion-content class="has-header has-subheader" overflow-scroll="true">    
+    <ion-list>
+      <ion-item>        
+      <!--<ion-item ng-repeat="item in dropdownScope | filter:searchFilter | limitTo:20" ng-click="dropdownClick(item)">-->
+        <span>Help stuff here</span>      
+      </ion-item>
+      <ion-item>        
+      <!--<ion-item ng-repeat="item in dropdownScope | filter:searchFilter | limitTo:20" ng-click="dropdownClick(item)">-->
+        <span>Help stuff here</span>      
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

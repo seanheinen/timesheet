@@ -1,0 +1,120 @@
+<ion-view view-title="profile" cache-view="false">
+
+  <div class="bar bar-header bar-positive">    
+    <button class="button icon ion-chevron-left nav-buttons" ng-click="$back()"></button>    
+  </div>
+
+  <div class="profile-header">
+   <!--<a class="button icon-left ion-chevron-left button-clear"></a>-->
+   <div class="user-profile-header">
+     <div class="user-profile-image">
+     	<img src="img/icon-male-user.png">
+     </div>
+     <span class="user-profile-name">{{person.FirstName}} {{person.LastName}}</span>
+     <span class="user-profile-title">{{person.IDNR}}</span>
+   </div>
+  </div>
+
+	<div class="tabs-nav-push">
+
+		<ion-tabs class="tabs-striped tabs-top tabs-background-positive tabs-color-light profile-header-tabs has-footer">
+			<ion-tab title="Details">
+	    	<!-- Tab 1 content -->
+	      <ion-view>
+	       	<ion-content overflow-scroll="true" class="profile-tab-content profile-details">
+	         	<ion-list>
+
+							<ion-item>
+		           	<span class="input-label">Department</span>
+		           	<input type="text" readonly value="{{person.DepartmentId}}">
+		          </ion-item>
+	         
+	          	<ion-item>
+		           	<span class="input-label">Section</span>
+		           	<input type="text" readonly value="{{person.SectionId}}">
+		          </ion-item>
+	           
+	           	<ion-item>
+	            	<span class="input-label">Sub-Section</span>
+	            	<input type="text" readonly value="{{person.SubsectionId}}">
+	           	</ion-item>
+	           
+	           	<ion-item>
+	            	<span class="input-label">District</span>
+	            	<input type="text" readonly value="{{person.DistrictId}}">
+	           	</ion-item>
+	           
+	           	<ion-item>
+	            	<span class="input-label">Base</span>
+	            	<input type="text" readonly value="{{person.BaseId}}">
+	           	</ion-item>
+	           
+	         	</ion-list>         
+	       	</ion-content>
+	      </ion-view >
+	    </ion-tab>
+	    <!-- Tab 2 content -->
+	   <!--
+		<ion-tab title="Capabilities" class="border-color capabilities">
+	      
+	      <ion-view>
+	       	<ion-content overflow-scroll="true" class="profile-tab-content">
+	         
+	         	<ion-list>
+	         
+	           	<ion-item class="item-toggle">
+	              Medic
+	              <label class="toggle toggle-calm">
+	                <input readonly type="checkbox">
+	                <div class="track">
+	                  <div class="handle"></div>
+	                </div>
+	              </label>
+	           	</ion-item>
+	           
+	           	<ion-item class="item-toggle">
+	              Sharp Shooter
+	              <label class="toggle toggle-calm">
+	                <input readonly type="checkbox">
+	                <div class="track">
+	                  <div class="handle"></div>
+	                </div>
+	              </label>
+	          	</ion-item>
+	           
+	           	<ion-item class="item-toggle">
+	              HTML5
+	              <label class="toggle toggle-calm">
+	              <input readonly type="checkbox">
+		              <div class="track">
+		                <div class="handle"></div>
+		              </div>
+		            </label>
+	         		</ion-item>           
+		        </ion-list>
+		      </ion-content>
+		    </ion-view>
+	  	</ion-tab>            
+	  	-->      
+
+	  </ion-tabs>
+
+	</div>
+
+</ion-view>
+
+
+
+<!--
+<ion-slide-box>
+  <ion-slide>
+      <img src="http://lorempixel.com/400/200/sports?1" alt="">
+  </ion-slide>
+  <ion-slide>
+      <img src="http://lorempixel.com/400/200/sports?2" alt="">
+  </ion-slide>
+  <ion-slide>
+      <img src="http://lorempixel.com/400/200/sports?3" alt="">
+  </ion-slide>
+</ion-slide-box>
+-->

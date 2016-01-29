@@ -1,0 +1,26 @@
+{
+  "name": "timesheet",
+  "private": true,
+  "version": "0.0.1",
+  "description": "New timesheet system",
+  "repository": "https://github.com/seanheinen/timesheet.git",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-util": "*",
+    "bower": "*",
+    "gulp-concat": "*",
+    "gulp-sass": "*",
+    "gulp-minify-css": "*",
+    "gulp-rename": "*",
+    "gulp-shell": "*",
+    "gulp-angular-templatecache": "*",
+    "bower": "*",
+    "http-server": "*"
+  },
+  "scripts": {
+    
+  }
+}
+
+

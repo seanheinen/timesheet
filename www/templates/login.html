@@ -1,0 +1,62 @@
+<ion-view view-title="login"  animation="no-animation">
+
+  <ion-pane class="login-page">
+
+    <div class="login-grad">
+      <ion-content class="padding" overflow-scroll="true">
+      
+        <div class="login-header"></div>    
+
+        <ion-list class="card">
+          <ion-item>
+            <label>
+              <input type="text" placeholder="Username" ng-model="credenitals.username">
+            </label>
+          </ion-item>
+          <ion-item>
+            <label>
+              <input placeholder="Password" type="password" ng-model="credenitals.password">
+            </label>
+          </ion-item>
+          <button class="button button-block button-balanced" ng-click="doLogin()">Login</button>            
+        </ion-list>
+      
+        <div class="forgot-password">
+          <a href="#">Forgot Password?</a>  
+        </div>
+            
+    </ion-content>    
+  </div>
+</ion-pane>
+
+
+
+
+<!--
+  <img class="full-image" src="img/Login_Banner.svg" style="margin-top:30%">
+  <div class="card">
+    <form ng-submit="doLogin(loginForm)" name="loginForm" novalidate>
+      <div class="list padding">        
+        <div class="item item-input">
+          <span class="input-label">Username</span>
+          <input name="username" ng-model="username" type="text" required-input clear-input/>
+        </div>                
+        <div class="item item-input" ng-class="{ 'has-error' : login-form.username.$invalid}">
+          <span class="input-label">Password</span>
+          <input name="password" ng-model="password" type="password" required-input clear-input>          
+        </div>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Log in</button>
+        </label>
+      </div>
+    </form>  
+  </div>
+  <img style="width: 40%; margin: 60px 10px 20px;" class="full-image" src="img/CityLogo.jpg">
+
+
+--> 
+</ion-view>
+
+
+
+
