@@ -1,37 +1,38 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>My AngularJS App</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">    
-</head>
 
-<body ng-app="timesheet" ng-controller="AppCtrl">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Timesheets</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <div ng-view></div>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">    
 
-  <!-- library js -->
-  <script src="lib/angular/js/angular.min.js"></script>    
-  <script src="lib/angular/js/angular-animate.min.js"></script>    
-  <script src="lib/angular/js/angular-ui-router.min.js"></script>      
-  <script src="lib/bootstrap/js/ui-bootstrap.min.js"></script>      
+  </head>
 
-  <!-- applications js -->
-  <script src="js/app.js"></script>    
-  <script src="js/controllers.js"></script>    
-  <script src="js/controller.login.js"></script>  
-  <script src="js/services.js"></script>
+  <body ng-app="timesheet" ng-controller="AppCtrl">
 
-  <!-- extras -->
-  <script src="js/templatecache.js"></script>  
+    <div ng-view></div>
 
-  <!-- directives js -->    
-  <!-- <script src="js/directives/....js"></script>          -->  
-</body>
+    <!-- library js -->
+    <script src="lib/angular/js/angular.js"></script>    
+    <script src="lib/angular/js/angular-animate.min.js"></script>    
+    <script src="lib/angular/js/angular-ui-router.min.js"></script>      
+    <script src="lib/bootstrap/js/ui-bootstrap.min.js"></script>      
+
+    <!-- applications js -->
+    <script src="js/app.js"></script>    
+    <script src="js/controllers.js"></script>    
+    <script src="js/controller.login.js"></script>  
+    <script src="js/services.js"></script>
+
+    <!-- extras -->
+    <script src="js/templatecache.js"></script>  
+
+    <!-- directives js -->    
+    <!-- <script src="js/directives/....js"></script>          -->  
+  </body>
 </html>

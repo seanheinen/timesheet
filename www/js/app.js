@@ -1,5 +1,5 @@
 /********************************************************************************
- * Create Date: 12/09/2015 Company: EOH Mobility Author: Development Team
+ * Create Date: 30/01/2016 Company: EOH Mobility Author: Development Team
  ******************************************************************************/
 (function(){
 
@@ -7,14 +7,16 @@
   angular.module('timesheet', [ 
     'ui.bootstrap',     
     'ui.router',
+    'ngAnimate',
     'templateCache',
     'timesheet.services',
     'timesheet.controllers',
     'timesheet.controller.login'    
   ])
 
-  .run(function($ionicPopup, $state) {
-
+  .run(function($state) {
+    // do init app thigns
+    
   })
 
   /// router options below - all screens for application
